@@ -1,67 +1,86 @@
-# Dylan Myers - Mechanical Engineering & AI Portfolio
+# Dylan Myers - Engineering & AI Portfolio
 
-A modern, responsive portfolio website showcasing mechanical engineering and AI projects, built with HTML, CSS (Tailwind), and JavaScript.
-
-## Live Website
-🌐 **https://dmoney123.github.io/dylanmyers.github.io/**
-
-## About
-
-I'm a Mechanical Engineering student at McGill University with a Minor in Applied Artificial Intelligence, graduating in May 2026. My passion lies in sustainable mechanical design and AI-driven innovation.
+A modern, responsive portfolio website showcasing engineering and AI projects, built with Next.js, TypeScript, and Tailwind CSS.
 
 ## Features
 
 - **Responsive Design**: Optimized for all devices and screen sizes
-- **Modern UI/UX**: Clean, professional design with smooth hover effects
-- **Featured Projects**: Interactive project gallery with 8 featured projects
-- **Professional Experience**: Detailed work history and achievements
-- **Achievement Badges**: Showcasing scholarships and awards
-- **Contact Form**: Functional contact form for inquiries
-- **Individual Project Pages**: Detailed project information with Problem → Approach → Results structure
-
-## Portfolio Structure
-
-### Main Page (`index.html`)
-- **About Section**: Two-column layout with headshot and personal information
-- **Professional Experience**: Work history at Milwaukee Tool, McGill University, and TTI Canada
-- **Featured Projects**: 8 projects in a responsive grid with hover effects
-- **Contact Section**: Contact information and inquiry form
-
-### Individual Project Pages (`projects/`)
-- `neural-net.html` - Interpolating Neural Network
-- `gearbox.html` - Airplane Gearbox Design
-- `recovery-app.html` - Recovery Analysis App
-- `block-game.html` - Block Video Game
-- `java.html` - Java Projects
+- **Modern UI/UX**: Clean, professional design with smooth animations
+- **Project Showcase**: Interactive project gallery with filtering and detailed views
+- **Skills Section**: Comprehensive technical skills with progress indicators
+- **Contact Form**: Functional contact form with validation
+- **SEO Optimized**: Meta tags and structured data for better search visibility
+- **Performance**: Fast loading times and optimized images
 
 ## Technologies Used
 
-- **HTML5**: Semantic markup and structure
-- **Tailwind CSS**: Utility-first CSS framework for styling
-- **JavaScript**: Interactive functionality and smooth scrolling
-- **GitHub Pages**: Hosting and deployment
-
-## Key Achievements
-
-- Ross Ritchie Scholarship
-- Antje Graupe Prior Scholarship
-- Tomlinson Engagement Award for Mentoring
-- NSERC Grant Recipient
-- SURE Grant Recipient
-
-## Professional Experience
-
-- **Engineering Project Lead Intern** - Milwaukee Tool (May 2025 – Aug 2025)
-- **Mechanical Design Intern** - Milwaukee Tool (May 2024 - Aug 2024)
-- **Undergraduate Research Intern** - McGill University (May 2023 – Aug 2023)
-- **Event Marketing Intern** - TTI Canada (May 2022 – Aug 2022)
+- HTML
 
 ## Getting Started
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/dmoney123/dylanmyers.github.io.git
-cd dylanmyers.github.io
+git clone <your-repo-url>
+cd portfolio
 ```
 
-2. Open `index.html` in
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Customization
+
+### Personal Information
+Update the following files with your information:
+- `src/app/layout.tsx` - Meta tags and site title
+- `src/components/Hero.tsx` - Name, roles, and introduction
+- `src/components/About.tsx` - Personal story and statistics
+- `src/components/Contact.tsx` - Contact information and social links
+
+### Projects
+Edit `src/components/Projects.tsx` to add your projects:
+- Update the `projects` array with your project details
+- Add project images to the `public` folder
+- Update GitHub and demo URLs
+
+### Skills
+Modify `src/components/Skills.tsx` to reflect your technical skills:
+- Update skill categories and proficiency levels
+- Add or remove technologies as needed
+
+### Styling
+Customize the design in:
+- `tailwind.config.js` - Color scheme and theme
+- `src/app/globals.css` - Global styles and fonts
+
+## Deployment
+
+### Vercel (Recommended)
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy with zero configuration
+
+### Other Platforms
+The site can be deployed to any platform that supports Next.js:
+- Netlify
+- AWS Amplify
+- Railway
+- DigitalOcean App Platform
+
+## License
+
+MIT License - feel free to use this template for your own portfolio!
+
+## Contact
+
+Dylan Myers - dylan.myers@university.edu
+LinkedIn: [linkedin.com/in/yourusername](https://linkedin.com/in/yourusername)
+GitHub: [github.com/yourusername](https://github.com/yourusername)
