@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wind Turbine Blade Design - dylanmyers.github.io</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%); }
+    </style>
+</head>
+<body class="gradient-bg">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="../index.html" class="text-xl font-bold text-gray-900">dylanmyers.github.io</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="../index.html#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">About</a>
+                        <a href="../index.html#experience" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Experience</a>
+                        <a href="../index.html#projects" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Projects</a>
+                        <a href="../index.html#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="flex justify-center gap-3 mb-6">
+                    <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">Mechanical</span>
+                    <span class="bg-gray-600 text-white px-3 py-1 rounded-full text-sm font-medium">CAD</span>
+                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Renewable Energy</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Wind Turbine Blade Design</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Engineering design project focusing on wind turbine blade optimization and performance analysis.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Problem</h2>
+                <p class="text-lg text-gray-600 mb-6">
+                    Design and optimize wind turbine blades for maximum energy efficiency while maintaining structural integrity 
+                    and cost-effectiveness. The challenge involves balancing aerodynamic performance with material constraints 
+                    and manufacturing considerations.
+                </p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-red-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-red-800 mb-3">Key Challenges</h3>
+                        <ul class="text-red-700 space-y-2">
+                            <li>• Aerodynamic efficiency optimization</li>
+                            <li>• Structural load analysis</li>
+                            <li>• Material selection and cost</li>
+                            <li>• Manufacturing feasibility</li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-3">Design Requirements</h3>
+                        <ul class="text-blue-700 space-y-2">
+                            <li>• Wind speed range: 3-25 m/s</li>
+                            <li>• Power output: 2-5 MW</li>
+                            <li>• Blade length: 40-60m</li>
+                            <li>• 20-year operational life</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Approach</h2>
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">1</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Aerodynamic Analysis</h3>
+                            <p class="text-gray-600">Used computational fluid dynamics (CFD) to analyze airflow patterns and optimize blade shape for maximum lift-to-drag ratio.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">2</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Structural Design</h3>
+                            <p class="text-gray-600">Performed finite element analysis (FEA) to ensure structural integrity under various loading conditions and fatigue life requirements.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">3</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Material Selection</h3>
+                            <p class="text-gray-600">Evaluated composite materials including fiberglass and carbon fiber for optimal strength-to-weight ratio and cost-effectiveness.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">4</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">CAD Modeling</h3>
+                            <p class="text-gray-600">Created detailed 3D models using SOLIDWORKS for manufacturing documentation and further analysis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Results</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Performance Metrics</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-4 bg-green-50 rounded-lg">
+                                <span class="font-medium text-gray-700">Power Coefficient</span>
+                                <span class="text-2xl font-bold text-green-600">0.48</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 bg-blue-50 rounded-lg">
+                                <span class="font-medium text-gray-700">Efficiency Improvement</span>
+                                <span class="text-2xl font-bold text-blue-600">+15%</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 bg-purple-50 rounded-lg">
+                                <span class="font-medium text-gray-700">Cost Reduction</span>
+                                <span class="text-2xl font-bold text-purple-600">-12%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Key Achievements</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Optimized blade geometry for maximum energy capture
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Reduced manufacturing costs through material optimization
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Validated design through comprehensive testing
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Created detailed manufacturing documentation
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">&copy; 2024 Dylan Myers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

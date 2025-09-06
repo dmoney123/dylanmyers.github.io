@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipe Inspecting Robot - dylanmyers.github.io</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%); }
+    </style>
+</head>
+<body class="gradient-bg">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="../index.html" class="text-xl font-bold text-gray-900">dylanmyers.github.io</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="../index.html#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">About</a>
+                        <a href="../index.html#experience" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Experience</a>
+                        <a href="../index.html#projects" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Projects</a>
+                        <a href="../index.html#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="flex justify-center gap-3 mb-6">
+                    <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">Mechanical</span>
+                    <span class="bg-gray-600 text-white px-3 py-1 rounded-full text-sm font-medium">CAD</span>
+                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Robotics</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Pipe Inspecting Robot</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    CAD-focused project designing a robot for pipe inspection and maintenance applications.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Problem</h2>
+                <p class="text-lg text-gray-600 mb-6">
+                    Design a robotic system capable of navigating through various pipe diameters to perform inspection 
+                    and maintenance tasks. The robot must be compact, maneuverable, and able to carry inspection 
+                    equipment while maintaining stability in different pipe orientations.
+                </p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-red-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-red-800 mb-3">Key Challenges</h3>
+                        <ul class="text-red-700 space-y-2">
+                            <li>• Navigation in confined spaces</li>
+                            <li>• Adaptability to different pipe sizes</li>
+                            <li>• Stability in vertical orientations</li>
+                            <li>• Power and sensor integration</li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-3">Design Requirements</h3>
+                        <ul class="text-blue-700 space-y-2">
+                            <li>• Pipe diameter range: 100-500mm</li>
+                            <li>• Maximum length: 2 meters</li>
+                            <li>• Camera and sensor integration</li>
+                            <li>• Remote control capability</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Approach</h2>
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">1</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Conceptual Design</h3>
+                            <p class="text-gray-600">Developed multiple design concepts focusing on modularity and adaptability to different pipe configurations.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">2</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">CAD Modeling</h3>
+                            <p class="text-gray-600">Created detailed 3D models using SOLIDWORKS, including assembly constraints and motion analysis.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">3</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Mechanism Design</h3>
+                            <p class="text-gray-600">Designed wheel and track systems for optimal traction and maneuverability in various pipe conditions.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">4</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Integration Planning</h3>
+                            <p class="text-gray-600">Planned sensor and camera mounting points for comprehensive inspection capabilities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Results</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Design Specifications</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-4 bg-green-50 rounded-lg">
+                                <span class="font-medium text-gray-700">Adaptability Range</span>
+                                <span class="text-2xl font-bold text-green-600">100-500mm</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 bg-blue-50 rounded-lg">
+                                <span class="font-medium text-gray-700">Modular Design</span>
+                                <span class="text-2xl font-bold text-blue-600">5 Modules</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 bg-purple-50 rounded-lg">
+                                <span class="font-medium text-gray-700">Weight</span>
+                                <span class="text-2xl font-bold text-purple-600">8.5 kg</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Key Features</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Modular design for easy maintenance and upgrades
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Adjustable wheel system for different pipe sizes
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Integrated camera and sensor mounting points
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Detailed manufacturing documentation
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">&copy; 2024 Dylan Myers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
