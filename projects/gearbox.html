@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airplane Gearbox Design - dylanmyers.github.io</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%); }
+    </style>
+</head>
+<body class="gradient-bg">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="../index.html" class="text-xl font-bold text-gray-900">dylanmyers.github.io</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="../index.html#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">About</a>
+                        <a href="../index.html#experience" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Experience</a>
+                        <a href="../index.html#projects" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Projects</a>
+                        <a href="../index.html#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="flex justify-center gap-3 mb-6">
+                    <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">Mechanical</span>
+                    <span class="bg-gray-600 text-white px-3 py-1 rounded-full text-sm font-medium">SOLIDWORKS</span>
+                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Design Optimization</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Airplane Gearbox Design</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Fully designed an in-depth model gearbox for a small airplane, given life and loading parameters 
+                    using engineering design optimization principles.
+                </p>
+            </div>
+
+            <!-- Project Image -->
+            <div class="mb-12">
+                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=400&fit=crop" alt="Gearbox CAD Model" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">The Problem</h2>
+            </div>
+            <div class="prose prose-lg max-w-none">
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    Small aircraft require efficient, reliable gearbox systems to transfer power from the engine to the propeller 
+                    while meeting strict weight, safety, and performance requirements. The challenge involved:
+                </p>
+                <ul class="list-disc list-inside text-gray-600 space-y-3 mb-8">
+                    <li><strong>Weight constraints:</strong> Every gram matters in aircraft design - gearbox must be lightweight</li>
+                    <li><strong>Safety requirements:</strong> Must withstand extreme loads and fatigue cycles without failure</li>
+                    <li><strong>Efficiency optimization:</strong> Minimize power losses while maintaining reliability</li>
+                    <li><strong>Manufacturing feasibility:</strong> Design must be cost-effective to produce</li>
+                    <li><strong>Maintenance accessibility:</strong> Components must be serviceable in field conditions</li>
+                </ul>
+                <p class="text-gray-600 leading-relaxed">
+                    I needed to design a complete gearbox system that would meet all performance criteria while staying within 
+                    strict weight and cost limitations for a small aircraft application.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">The Approach</h2>
+            </div>
+            <div class="prose prose-lg max-w-none">
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    I approached this design challenge using systematic engineering methodology, combining theoretical analysis 
+                    with advanced CAD modeling and FEA simulation to optimize the gearbox design.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Design Process</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>• Load analysis and gear ratio calculations</li>
+                            <li>• Material selection for strength and weight</li>
+                            <li>• 3D CAD modeling in SOLIDWORKS</li>
+                            <li>• FEA stress analysis and optimization</li>
+                            <li>• Manufacturing process planning</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Technical Specifications</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>• Input: 150 HP at 2700 RPM</li>
+                            <li>• Output: 150 HP at 1800 RPM</li>
+                            <li>• Gear ratio: 1.5:1 reduction</li>
+                            <li>• Material: 4140 steel heat treated</li>
+                            <li>• Weight target: < 25 kg</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Design Optimization Features</h3>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-blue-600 mb-1">FEA</div>
+                            <div class="text-gray-600">Stress Analysis</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-blue-600 mb-1">CAD</div>
+                            <div class="text-gray-600">3D Modeling</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-blue-600 mb-1">Optimized</div>
+                            <div class="text-gray-600">Weight Design</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">The Results</h2>
+            </div>
+            <div class="prose prose-lg max-w-none">
+                <p class="text-gray-600 leading-relaxed mb-8">
+                    The completed gearbox design exceeded all performance requirements while meeting strict weight and cost constraints:
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Performance Achievements</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>• <strong>22.5 kg total weight</strong> - 10% under target</li>
+                            <li>• <strong>98.5% efficiency</strong> - minimal power loss</li>
+                            <li>• <strong>Safety factor 2.5</strong> - exceeds aviation standards</li>
+                            <li>• <strong>50,000+ hour life</strong> - exceeds requirements</li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Technical Excellence</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>• Complete 3D assembly with 47 components</li>
+                            <li>• Detailed manufacturing drawings</li>
+                            <li>• FEA validation of all critical components</li>
+                            <li>• Cost-optimized design for production</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg mb-8">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Design Highlights</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">⚙️</div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Gear Design</h4>
+                            <p class="text-sm text-gray-600">Optimized tooth profiles for maximum efficiency and strength</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">🔧</div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Housing Design</h4>
+                            <p class="text-sm text-gray-600">Lightweight aluminum housing with integrated cooling fins</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">📐</div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Assembly</h4>
+                            <p class="text-sm text-gray-600">Modular design for easy maintenance and field service</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">CAD Files & Documentation</h3>
+                    <a href="https://github.com/dmoney123" class="inline-flex items-center bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        View CAD Files
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Projects -->
+    <section class="py-8 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <a href="../index.html#projects" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                </svg>
+                Back to Projects
+            </a>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -9,8 +9,14 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         .gradient-bg { background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%); }
-        .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        .project-card { transition: all 0.3s ease; }
+        .project-card:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+        .project-overlay { 
+            opacity: 0; 
+            transition: all 0.3s ease; 
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.95), rgba(16, 185, 129, 0.95));
+        }
+        .project-card:hover .project-overlay { opacity: 1; }
         .achievement-badge { background: linear-gradient(135deg, #3b82f6, #10b981); }
     </style>
 </head>
@@ -26,8 +32,7 @@
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">About</a>
                         <a href="#experience" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Experience</a>
-                        <a href="projects.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Projects</a>
-                        <a href="#skills" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Skills</a>
+                        <a href="#projects" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Projects</a>
                         <a href="#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Contact</a>
                     </div>
                 </div>
@@ -35,105 +40,86 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center">
-                <div class="mb-8">
-                    <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-500 to-green-500 flex items-center justify-center">
-                        <span class="text-4xl font-bold text-white">DM</span>
-                    </div>
-                </div>
-                
-                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
-                    Hi, I'm <span class="text-blue-600">Dylan Myers</span>
-                </h1>
-                
-                <div class="text-2xl md:text-3xl text-gray-600 mb-8 h-12 flex items-center justify-center">
-                    <span id="role-text">Mechanical Engineering Student</span>
-                </div>
-                
-                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
-                    BEng. Mechanical Engineering with Minor in Applied AI at McGill University. 
-                    Passionate about combining mechanical design with artificial intelligence to create 
-                    innovative solutions. Experienced in product development, research, and cross-functional collaboration.
-                </p>
-
-                <!-- Achievement Badges -->
-                <div class="flex flex-wrap justify-center gap-3 mb-12">
-                    <span class="achievement-badge text-white px-4 py-2 rounded-full text-sm font-medium">Dean's Honor List</span>
-                    <span class="achievement-badge text-white px-4 py-2 rounded-full text-sm font-medium">NSERC Grant Recipient</span>
-                    <span class="achievement-badge text-white px-4 py-2 rounded-full text-sm font-medium">3.70 GPA</span>
-                    <span class="achievement-badge text-white px-4 py-2 rounded-full text-sm font-medium">Research Intern</span>
-                </div>
-                
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors shadow-lg hover:shadow-xl">
-                        Get In Touch
-                    </a>
-                    <a href="projects.html" class="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-                        View My Work
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Mechanical Engineering student with a passion for AI and innovation
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">My Journey</h3>
-                    <div class="space-y-4 text-gray-600 leading-relaxed">
-                        <p>
-                            I'm a Mechanical Engineering student at McGill University with a Minor in Applied Artificial Intelligence, 
-                            graduating in May 2026. My passion lies at the intersection of mechanical design and AI, where I believe 
-                            the future of engineering innovation is being shaped.
-                        </p>
-                        <p>
-                            Through internships at Milwaukee Tool and research at McGill, I've gained hands-on experience in product 
-                            development, mechanical design, and cross-functional collaboration. I've led engineering projects, 
-                            conducted independent research, and presented findings to management and academic audiences.
-                        </p>
-                        <p>
-                            My goal is to leverage both mechanical engineering principles and AI technologies to create 
-                            innovative solutions that solve real-world problems and drive technological advancement.
-                        </p>
+    <section id="about" class="pt-20 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Photo and Personal Info -->
+                <div class="text-center lg:text-left">
+                    <div class="mb-8">
+                        <!-- Photo placeholder - you can replace this with your actual photo -->
+                        <div class="w-64 h-64 mx-auto lg:mx-0 mb-6 rounded-full bg-gradient-to-r from-blue-500 to-green-500 flex items-center justify-center shadow-2xl">
+                            <span class="text-6xl font-bold text-white">DM</span>
+                        </div>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+                        Hi, I'm <span class="text-blue-600">Dylan Myers</span>
+                    </h1>
+                    
+                    <div class="text-2xl md:text-3xl text-gray-600 mb-8 h-12 flex items-center justify-center lg:justify-start">
+                        <span id="role-text">Mechanical Engineering Student</span>
                     </div>
                 </div>
-                
-                <div class="grid grid-cols-2 gap-6">
-                    <div class="bg-blue-50 p-6 rounded-lg text-center">
-                        <div class="text-3xl font-bold text-blue-600 mb-2">3.70</div>
-                        <div class="text-gray-600">GPA</div>
+
+                <!-- Personal Paragraph and Awards -->
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">About Me</h2>
+                        <div class="space-y-4 text-gray-600 leading-relaxed text-lg">
+                            <p>
+                                I'm a Mechanical Engineering student at McGill University with a Minor in Applied Artificial Intelligence, 
+                                graduating in May 2026. My passion lies at the intersection of mechanical design and AI, where I believe 
+                                the future of engineering innovation is being shaped.
+                            </p>
+                            <p>
+                                Through internships at Milwaukee Tool and research at McGill, I've gained hands-on experience in product 
+                                development, mechanical design, and cross-functional collaboration. I've led engineering projects, 
+                                conducted independent research, and presented findings to management and academic audiences.
+                            </p>
+                            <p>
+                                My goal is to leverage both mechanical engineering principles and AI technologies to create 
+                                innovative solutions that solve real-world problems and drive technological advancement.
+                            </p>
+                        </div>
                     </div>
-                    <div class="bg-green-50 p-6 rounded-lg text-center">
-                        <div class="text-3xl font-bold text-green-600 mb-2">4</div>
-                        <div class="text-gray-600">Internships</div>
+
+                    <!-- Key Awards and Details -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Key Achievements</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                                <div class="text-2xl font-bold text-blue-600 mb-1">3.70</div>
+                                <div class="text-gray-600 text-sm">GPA</div>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                                <div class="text-2xl font-bold text-green-600 mb-1">Dean's</div>
+                                <div class="text-gray-600 text-sm">Honor List</div>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                                <div class="text-2xl font-bold text-purple-600 mb-1">NSERC</div>
+                                <div class="text-gray-600 text-sm">Grant</div>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm text-center">
+                                <div class="text-2xl font-bold text-orange-600 mb-1">2026</div>
+                                <div class="text-gray-600 text-sm">Graduation</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bg-blue-50 p-6 rounded-lg text-center">
-                        <div class="text-3xl font-bold text-blue-600 mb-2">2026</div>
-                        <div class="text-gray-600">Graduation</div>
-                    </div>
-                    <div class="bg-green-50 p-6 rounded-lg text-center">
-                        <div class="text-3xl font-bold text-green-600 mb-2">McGill</div>
-                        <div class="text-gray-600">University</div>
+
+                    <!-- Achievement Badges -->
+                    <div class="flex flex-wrap gap-3">
+                        <span class="achievement-badge text-white px-4 py-2 rounded-full text-sm font-medium">Ross Ritchie Scholarship</span>
+                        <span class="achievement-badge text-white px-4 py-2 rounded-full text-sm font-medium">Antje Graupe Prior Award</span>
+                        <span class="achievement-badge text-white px-4 py-2 rounded-full text-sm font-medium">Research Intern</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-gray-50">
+    <!-- Professional Experience Section -->
+    <section id="experience" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Professional Experience</h2>
@@ -144,7 +130,7 @@
             
             <div class="space-y-8">
                 <!-- Milwaukee Tool - Project Lead -->
-                <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
                     <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                         <div>
                             <h3 class="text-xl font-semibold text-gray-900">Engineering Project Lead Intern</h3>
@@ -160,7 +146,7 @@
                 </div>
 
                 <!-- Milwaukee Tool - Design Intern -->
-                <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
                     <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                         <div>
                             <h3 class="text-xl font-semibold text-gray-900">Mechanical Design Intern</h3>
@@ -176,7 +162,7 @@
                 </div>
 
                 <!-- McGill Research -->
-                <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
                     <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                         <div>
                             <h3 class="text-xl font-semibold text-gray-900">Undergraduate Research Intern</h3>
@@ -192,7 +178,7 @@
                 </div>
 
                 <!-- TTI Canada -->
-                <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
                     <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                         <div>
                             <h3 class="text-xl font-semibold text-gray-900">Event Marketing Intern</h3>
@@ -211,27 +197,32 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-white">
+    <section id="projects" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Engineering and AI projects showcasing technical skills and innovation
+                    Hover over projects to see descriptions, click to view detailed information
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Interpolating Neural Net -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover border border-gray-200">
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer" onclick="window.location.href='projects/neural-net.html'">
                     <div class="relative">
                         <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop" alt="Neural Network" class="w-full h-48 object-cover">
                         <div class="absolute top-4 right-4 bg-green-500 text-white px-2 py-1 rounded text-sm font-medium">AI/ML</div>
                         <div class="absolute top-4 left-4 bg-blue-600 text-white px-2 py-1 rounded text-sm font-medium">Python</div>
+                        <div class="project-overlay absolute inset-0 flex items-center justify-center">
+                            <div class="text-center text-white p-6">
+                                <h3 class="text-xl font-bold mb-2">Interpolating Neural Network</h3>
+                                <p class="text-sm">An Artificial Neural Network used to interpolate data to high accuracy and precision. Built entirely using numerical methods without toolboxes.</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-2">Interpolating Neural Network</h3>
-                        <p class="text-gray-600 mb-4">An Artificial Neural Network used to interpolate data to high accuracy and precision. Built entirely using numerical methods without toolboxes.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
+                        <div class="flex flex-wrap gap-2">
                             <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Python</span>
                             <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Numerical Methods</span>
                             <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Data Analysis</span>
@@ -240,16 +231,21 @@
                 </div>
 
                 <!-- Airplane Gearbox -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover border border-gray-200">
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer" onclick="window.location.href='projects/gearbox.html'">
                     <div class="relative">
                         <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&h=300&fit=crop" alt="Airplane Gearbox" class="w-full h-48 object-cover">
                         <div class="absolute top-4 right-4 bg-blue-500 text-white px-2 py-1 rounded text-sm font-medium">Mechanical</div>
                         <div class="absolute top-4 left-4 bg-gray-600 text-white px-2 py-1 rounded text-sm font-medium">SOLIDWORKS</div>
+                        <div class="project-overlay absolute inset-0 flex items-center justify-center">
+                            <div class="text-center text-white p-6">
+                                <h3 class="text-xl font-bold mb-2">Airplane Gearbox Design</h3>
+                                <p class="text-sm">Fully designed an in-depth model gearbox for a small airplane, given life and loading parameters using engineering design optimization.</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-2">Airplane Gearbox Design</h3>
-                        <p class="text-gray-600 mb-4">Fully designed an in-depth model gearbox for a small airplane, given life and loading parameters using engineering design optimization.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
+                        <div class="flex flex-wrap gap-2">
                             <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">SOLIDWORKS</span>
                             <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Solid Mechanics</span>
                             <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Design Optimization</span>
@@ -258,16 +254,21 @@
                 </div>
 
                 <!-- Recovery App -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover border border-gray-200">
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer" onclick="window.location.href='projects/recovery-app.html'">
                     <div class="relative">
                         <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=500&h=300&fit=crop" alt="Recovery App" class="w-full h-48 object-cover">
                         <div class="absolute top-4 right-4 bg-green-500 text-white px-2 py-1 rounded text-sm font-medium">ML</div>
                         <div class="absolute top-4 left-4 bg-blue-600 text-white px-2 py-1 rounded text-sm font-medium">Python</div>
+                        <div class="project-overlay absolute inset-0 flex items-center justify-center">
+                            <div class="text-center text-white p-6">
+                                <h3 class="text-xl font-bold mb-2">Recovery Analysis App</h3>
+                                <p class="text-sm">Uses HRV data from ECG sensors to power an ML app that provides insight into personalized recovery data and health metrics.</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-2">Recovery Analysis App</h3>
-                        <p class="text-gray-600 mb-4">Uses HRV data from ECG sensors to power an ML app that provides insight into personalized recovery data and health metrics.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
+                        <div class="flex flex-wrap gap-2">
                             <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Python</span>
                             <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Machine Learning</span>
                             <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">ECG Sensors</span>
@@ -276,137 +277,26 @@
                 </div>
 
                 <!-- Block Video Game -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover border border-gray-200">
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer" onclick="window.location.href='projects/block-game.html'">
                     <div class="relative">
                         <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500&h=300&fit=crop" alt="Block Game" class="w-full h-48 object-cover">
                         <div class="absolute top-4 right-4 bg-purple-500 text-white px-2 py-1 rounded text-sm font-medium">Game Dev</div>
                         <div class="absolute top-4 left-4 bg-orange-600 text-white px-2 py-1 rounded text-sm font-medium">Java</div>
+                        <div class="project-overlay absolute inset-0 flex items-center justify-center">
+                            <div class="text-center text-white p-6">
+                                <h3 class="text-xl font-bold mb-2">Block Video Game</h3>
+                                <p class="text-sm">A block-smashing video game built using Java in an object-oriented fashion, demonstrating software engineering principles.</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-2">Block Video Game</h3>
-                        <p class="text-gray-600 mb-4">A block-smashing video game built using Java in an object-oriented fashion, demonstrating software engineering principles.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
+                        <div class="flex flex-wrap gap-2">
                             <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Java</span>
                             <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">OOP</span>
                             <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Game Design</span>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Technical Skills</h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Comprehensive technical expertise across mechanical engineering and AI
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-6">Mechanical Engineering</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-gray-700 font-medium">SOLIDWORKS</span>
-                                <span class="text-gray-500 text-sm">95%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-blue-500 to-green-500 h-2 rounded-full" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-gray-700 font-medium">FEA Analysis</span>
-                                <span class="text-gray-500 text-sm">90%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-blue-500 to-green-500 h-2 rounded-full" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-gray-700 font-medium">3D Printing</span>
-                                <span class="text-gray-500 text-sm">85%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-blue-500 to-green-500 h-2 rounded-full" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-gray-700 font-medium">NX CAD</span>
-                                <span class="text-gray-500 text-sm">80%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-blue-500 to-green-500 h-2 rounded-full" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-sm">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-6">Programming & AI</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-gray-700 font-medium">Python</span>
-                                <span class="text-gray-500 text-sm">90%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-blue-500 to-green-500 h-2 rounded-full" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-gray-700 font-medium">MATLAB</span>
-                                <span class="text-gray-500 text-sm">85%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-blue-500 to-green-500 h-2 rounded-full" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-gray-700 font-medium">TensorFlow</span>
-                                <span class="text-gray-500 text-sm">80%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-blue-500 to-green-500 h-2 rounded-full" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-gray-700 font-medium">Java</span>
-                                <span class="text-gray-500 text-sm">75%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-blue-500 to-green-500 h-2 rounded-full" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="mt-12 text-center">
-                <h3 class="text-2xl font-semibold text-gray-900 mb-6">Additional Expertise</h3>
-                <div class="flex flex-wrap justify-center gap-3">
-                    {[
-                        'Machine Learning', 'scikit-learn', 'Experimental Design', 'Composite Materials',
-                        'CAM', 'Engineering Design', 'Cost Analysis', 'Project Leadership',
-                        'Cross-functional Collaboration', 'Technical Presentations', 'Data Analysis', 'Research & Development'
-                    ].map((skill, index) => (
-                        <span 
-                            key={index}
-                            className="bg-white px-4 py-2 rounded-full text-gray-700 border border-gray-200 hover:border-blue-300 transition-colors"
-                        >
-                            {skill}
-                        </span>
-                    ))}
                 </div>
             </div>
         </div>
