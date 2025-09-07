@@ -184,16 +184,6 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">
                     Hover over projects to see descriptions, click to view detailed project pages
-                <div class="mt-4">
-                    <button id="toggleProjectsBtn" onclick="toggleProjects()" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
-                        Disable Projects
-                    </button>
-                </div>
-                <div class="mt-4">
-                    <button id="toggleProjectsBtn" onclick="toggleProjects()" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
-                        Disable Projects
-                    </button>
-                </div>                </p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -500,6 +490,7 @@
     <script>
         // Smooth scrolling for navigation links
         // Project toggle functionality
+        // Change this to false to disable all project clicks
         let projectsEnabled = true;
 
         function toggleProjects() {
