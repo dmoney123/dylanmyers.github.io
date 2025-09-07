@@ -184,7 +184,16 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">
                     Hover over projects to see descriptions, click to view detailed project pages
-                </p>
+                <div class="mt-4">
+                    <button id="toggleProjectsBtn" onclick="toggleProjects()" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
+                        Disable Projects
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <button id="toggleProjectsBtn" onclick="toggleProjects()" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
+                        Disable Projects
+                    </button>
+                </div>                </p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -490,6 +499,31 @@
 
     <script>
         // Smooth scrolling for navigation links
+        // Project toggle functionality
+        let projectsEnabled = true;
+
+        function toggleProjects() {
+            projectsEnabled = !projectsEnabled;
+            const cards = document.querySelectorAll(".project-card");
+            const button = document.getElementById("toggleProjectsBtn");
+            
+            cards.forEach(card => {
+                if (projectsEnabled) {
+                    card.style.pointerEvents = "auto";
+                    card.style.opacity = "1";
+                    card.style.cursor = "pointer";
+                } else {
+                    card.style.pointerEvents = "none";
+                    card.style.opacity = "0.5";
+                    card.style.cursor = "not-allowed";
+                }
+            });
+            
+            if (button) {
+                button.textContent = projectsEnabled ? "Disable Projects" : "Enable Projects";
+                button.className = projectsEnabled ? "bg-red-600 hover:bg-red-700" : "bg-green-600 hover:bg-green-700";
+            }
+        }
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
