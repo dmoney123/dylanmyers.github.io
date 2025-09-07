@@ -491,8 +491,24 @@
         // Smooth scrolling for navigation links
         // Project toggle functionality
         // Change this to false to disable all project clicks
-        let projectsEnabled = true;
-
+        let projectsEnabled = false;
+        // Initialize disabled state on page load
+        document.addEventListener("DOMContentLoaded", function() {
+            const cards = document.querySelectorAll(".project-card");
+            cards.forEach(card => {
+                card.style.pointerEvents = "none";
+                card.style.opacity = "0.5";
+                card.style.cursor = "not-allowed";
+            });
+        });        // Initialize disabled state on page load
+        document.addEventListener("DOMContentLoaded", function() {
+            const cards = document.querySelectorAll(".project-card");
+            cards.forEach(card => {
+                card.style.pointerEvents = "none";
+                card.style.opacity = "0.5";
+                card.style.cursor = "not-allowed";
+            });
+        });
         function toggleProjects() {
             projectsEnabled = !projectsEnabled;
             const cards = document.querySelectorAll(".project-card");
