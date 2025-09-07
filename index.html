@@ -497,10 +497,10 @@
             const cards = document.querySelectorAll(".project-card");
             cards.forEach(card => {
                 card.style.pointerEvents = "none";
-                card.style.opacity = "0.5";
-                card.style.cursor = "not-allowed";
+                // Keep normal appearance - no opacity change
+                // Keep normal cursor - no cursor change
             });
-        });        function toggleProjects() {
+        });        });        function toggleProjects() {
             projectsEnabled = !projectsEnabled;
             const cards = document.querySelectorAll(".project-card");
             const button = document.getElementById("toggleProjectsBtn");
@@ -512,8 +512,8 @@
                     card.style.cursor = "pointer";
                 } else {
                     card.style.pointerEvents = "none";
-                    card.style.opacity = "0.5";
-                    card.style.cursor = "not-allowed";
+                    // // card.style.opacity = "0.5"; // Keep normal appearance // Keep normal appearance
+                    // // card.style.cursor = "not-allowed"; // Keep normal cursor // Keep normal cursor
                 }
             });
             
