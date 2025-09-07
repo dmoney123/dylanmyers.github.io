@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Blow - dylanmyers.github.io</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%); }
+    </style>
+</head>
+<body class="gradient-bg">
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="../index.html" class="text-xl font-bold text-gray-900">dylanmyers.github.io</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="../index.html#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">About</a>
+                        <a href="../index.html#experience" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Experience</a>
+                        <a href="../index.html#projects" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Projects</a>
+                        <a href="../index.html#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="flex justify-center gap-3 mb-6">
+                    <span class="bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-medium">Marketing</span>
+                    <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                    <span class="bg-gray-700 text-white px-3 py-1 rounded-full text-sm font-medium">Raspberry Pi</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Interactive Blow</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Trade-show interactive built with MakeyMakey, Raspberry Pi, and Python.
+                    Customers could pull real tool triggers to watch short videos and learn more.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Problem</h2>
+                <p class="text-lg text-gray-600 mb-6">
+                    Create an engaging booth experience that teaches product features without staff intervention.
+                </p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-red-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-red-800 mb-3">Constraints</h3>
+                        <ul class="text-red-700 space-y-2">
+                            <li>• Must be intuitive and durable for heavy public use</li>
+                            <li>• Offline-capable and simple to power/reset</li>
+                            <li>• Minimal maintenance for traveling team</li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-3">Hardware</h3>
+                        <ul class="text-blue-700 space-y-2">
+                            <li>• MakeyMakey as input interface to tool triggers</li>
+                            <li>• Raspberry Pi 4 running Python scripts</li>
+                            <li>• HDMI display with short product videos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Approach</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">1</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Trigger Mapping</h3>
+                            <p class="text-gray-600">Mapped each tool trigger to a MakeyMakey input that the Python app read via keyboard events.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">2</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Python Player</h3>
+                            <p class="text-gray-600">Full-screen loop with idle attract screen; on trigger, queued a short product video and CTA.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">3</div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Field Hardening</h3>
+                            <p class="text-gray-600">Auto-boot to app, watchdog restarts, media on local storage, and simple power-cycle reset.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Results</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Impact</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li>• Doubled average booth dwell time</li>
+                            <li>• Reduced staff overhead during peak hours</li>
+                            <li>• Reusable setup for multiple product lines</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Tech Highlights</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li>• MakeyMakey inputs → Python event handler</li>
+                            <li>• Raspberry Pi auto-boot, kiosk mode</li>
+                            <li>• Video playlist and idle screen loop</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">&copy; 2024 Dylan Myers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
