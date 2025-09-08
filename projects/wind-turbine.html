@@ -19,158 +19,84 @@
                 <div class="flex-shrink-0">
                     <a href="../index.html" class="text-xl font-bold text-gray-900">dylanmyers.github.io</a>
                 </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="../index.html#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">About</a>
-                        <a href="../index.html#experience" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Experience</a>
-                        <a href="../index.html#projects" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Projects</a>
-                        <a href="../index.html#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Contact</a>
-                    </div>
-                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Project Header -->
-    <section class="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-12">
+    <!-- Header -->
+    <section class="pt-20 pb-10 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+            <img src="../public/images/projects/wind-turbine.png" alt="Wind Turbine Blade Design" class="w-full rounded-xl shadow-lg object-contain" style="max-height: 26rem;">
+            <div class="text-center mt-10">
                 <div class="flex justify-center gap-3 mb-6">
                     <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">Mechanical</span>
                     <span class="bg-gray-600 text-white px-3 py-1 rounded-full text-sm font-medium">CAD</span>
-                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Renewable Energy</span>
+                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">MATLAB</span>
                 </div>
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Wind Turbine Blade Design</h1>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Engineering design project focusing on wind turbine blade optimization and performance analysis.
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Wind Turbine Blade Design</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Three-part university project at Technical University of Denmark: statistical wind analysis, airfoil design & testing, and optimization for Denmark's Southern Coast.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="py-12 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Project Overview</h2>
+            <div class="prose prose-lg max-w-none">
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    This comprehensive wind turbine project was completed at the Technical University of Denmark as part of university coursework, working collaboratively with a peer. The goal was to design and manufacture a prototype airfoil for a wind turbine optimized for Denmark's Southern Coast conditions.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    The project consisted of three integrated phases: statistical wind pattern analysis, engineering design and prototype testing, and computational optimization for competitive performance.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Problem Section -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8">
+    <!-- Phase 1: Statistical Analysis -->
+    <section class="py-12 bg-gray-50 px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
-            <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-3xl font-bold text-gray-900 mb-6">Problem</h2>
-                <p class="text-lg text-gray-600 mb-6">
-                    Design and optimize wind turbine blades for maximum energy efficiency while maintaining structural integrity 
-                    and cost-effectiveness. The challenge involves balancing aerodynamic performance with material constraints 
-                    and manufacturing considerations.
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Phase 1: Wind Pattern Analysis</h2>
+            <div class="bg-white rounded-xl shadow p-6">
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Conducted comprehensive statistical analysis of wind patterns at the DTU Risø Windfarm using Cumulative Distribution Functions (CDF) and Probability Density Functions (PDF). This analysis provided critical data on wind speed distributions, turbulence characteristics, and seasonal variations specific to the Danish coastal environment.
                 </p>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-red-50 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold text-red-800 mb-3">Key Challenges</h3>
-                        <ul class="text-red-700 space-y-2">
-                            <li>• Aerodynamic efficiency optimization</li>
-                            <li>• Structural load analysis</li>
-                            <li>• Material selection and cost</li>
-                            <li>• Manufacturing feasibility</li>
-                        </ul>
-                    </div>
-                    <div class="bg-blue-50 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold text-blue-800 mb-3">Design Requirements</h3>
-                        <ul class="text-blue-700 space-y-2">
-                            <li>• Wind speed range: 3-25 m/s</li>
-                            <li>• Power output: 2-5 MW</li>
-                            <li>• Blade length: 40-60m</li>
-                            <li>• 20-year operational life</li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="text-gray-700 space-y-2">
+                    <li>• Analyzed historical wind data from DTU Risø Windfarm</li>
+                    <li>• Applied statistical methods (CDF, PDF) to characterize wind patterns</li>
+                    <li>• Identified optimal operating conditions for blade design</li>
+                    <li>• Established design constraints based on local wind characteristics</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Approach Section -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8">
+    <!-- Phase 2: Design & Testing -->
+    <section class="py-12 bg-white px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
-            <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-3xl font-bold text-gray-900 mb-6">Approach</h2>
-                <div class="space-y-8">
-                    <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">1</div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Aerodynamic Analysis</h3>
-                            <p class="text-gray-600">Used computational fluid dynamics (CFD) to analyze airflow patterns and optimize blade shape for maximum lift-to-drag ratio.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">2</div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Structural Design</h3>
-                            <p class="text-gray-600">Performed finite element analysis (FEA) to ensure structural integrity under various loading conditions and fatigue life requirements.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">3</div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Material Selection</h3>
-                            <p class="text-gray-600">Evaluated composite materials including fiberglass and carbon fiber for optimal strength-to-weight ratio and cost-effectiveness.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">4</div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">CAD Modeling</h3>
-                            <p class="text-gray-600">Created detailed 3D models using SOLIDWORKS for manufacturing documentation and further analysis.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Results Section -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto">
-            <div class="bg-white rounded-2xl shadow-xl p-8">
-                <h2 class="text-3xl font-bold text-gray-900 mb-6">Results</h2>
-                <div class="grid md:grid-cols-2 gap-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Phase 2: Airfoil Design & Prototype Testing</h2>
+            <div class="bg-gray-50 rounded-xl shadow p-6">
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Applied the engineering design process to create an optimized airfoil, carefully accounting for S-N fatigue curves, stress-life constraints, Reynolds number effects, and beam theory principles. The design process culminated in prototype manufacturing and wind tunnel testing.
+                </p>
+                <div class="grid md:grid-cols-2 gap-6 mt-6">
                     <div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Performance Metrics</h3>
-                        <div class="space-y-4">
-                            <div class="flex justify-between items-center p-4 bg-green-50 rounded-lg">
-                                <span class="font-medium text-gray-700">Power Coefficient</span>
-                                <span class="text-2xl font-bold text-green-600">0.48</span>
-                            </div>
-                            <div class="flex justify-between items-center p-4 bg-blue-50 rounded-lg">
-                                <span class="font-medium text-gray-700">Efficiency Improvement</span>
-                                <span class="text-2xl font-bold text-blue-600">+15%</span>
-                            </div>
-                            <div class="flex justify-between items-center p-4 bg-purple-50 rounded-lg">
-                                <span class="font-medium text-gray-700">Cost Reduction</span>
-                                <span class="text-2xl font-bold text-purple-600">-12%</span>
-                            </div>
-                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">Design Considerations</h3>
+                        <ul class="text-gray-700 space-y-1">
+                            <li>• S-N fatigue analysis for material selection</li>
+                            <li>• Stress-life constraints and safety factors</li>
+                            <li>• Reynolds number optimization</li>
+                            <li>• Beam theory for structural integrity</li>
+                        </ul>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Key Achievements</h3>
-                        <ul class="space-y-3 text-gray-600">
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Optimized blade geometry for maximum energy capture
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Reduced manufacturing costs through material optimization
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Validated design through comprehensive testing
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Created detailed manufacturing documentation
-                            </li>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">Testing & Validation</h3>
+                        <ul class="text-gray-700 space-y-1">
+                            <li>• Prototype manufacturing</li>
+                            <li>• Wind tunnel testing</li>
+                            <li>• Performance measurement</li>
+                            <li>• Data collection and analysis</li>
                         </ul>
                     </div>
                 </div>
@@ -178,13 +104,46 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <p class="text-gray-400">&copy; 2024 Dylan Myers. All rights reserved.</p>
+    <!-- Phase 3: Optimization -->
+    <section class="py-12 bg-gray-50 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Phase 3: Computational Optimization</h2>
+            <div class="bg-white rounded-xl shadow p-6">
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Utilized MATLAB software for iterative design optimization, focusing on key performance parameters including chord length, angle of attack, twist angle, and rotational induction factor. The optimization process aimed to maximize energy capture while maintaining structural integrity.
+                </p>
+                <div class="grid md:grid-cols-2 gap-6 mt-6">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">Optimization Parameters</h3>
+                        <ul class="text-gray-700 space-y-1">
+                            <li>• Chord length variation</li>
+                            <li>• Angle of attack optimization</li>
+                            <li>• Twist angle distribution</li>
+                            <li>• Rotational induction factor</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">Final Phase</h3>
+                        <ul class="text-gray-700 space-y-1">
+                            <li>• Re-testing optimized design</li>
+                            <li>• Performance validation</li>
+                            <li>• Competition with peer designs</li>
+                            <li>• Results analysis and comparison</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
+    </section>
+
+    <!-- Back -->
+    <section class="py-8 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <a href="../index.html#projects" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                Back to Projects
+            </a>
+        </div>
+    </section>
 </body>
 </html>
