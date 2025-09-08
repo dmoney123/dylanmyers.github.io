@@ -491,6 +491,16 @@
         // Project toggle functionality
         // Change this to false to disable all project clicks
         let projectsEnabled = false;
+        // Block clicks on project cards when disabled (capture phase)
+        document.addEventListener("click", function(e) {
+            const card = e.target.closest(".project-card");
+            if (!card) return;
+            if (!projectsEnabled) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (e.stopImmediatePropagation) e.stopImmediatePropagation();
+            }
+        }, true);
 
         // Function to apply current project state
         function applyProjectState() {
