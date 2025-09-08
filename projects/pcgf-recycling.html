@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycling of PCGF - dylanmyers.github.io</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%); }
+    </style>
+</head>
+<body class="gradient-bg">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="../index.html" class="text-xl font-bold text-gray-900">dylanmyers.github.io</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="../index.html#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">About</a>
+                        <a href="../index.html#experience" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Experience</a>
+                        <a href="../index.html#projects" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Projects</a>
+                        <a href="../index.html#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <img src="../public/images/projects/pcgf-recycling-hero.jpg" alt="PCGF Recycling" class="w-full h-64 md:h-96 object-cover rounded-xl shadow-lg mb-8">
+            <div class="text-center mb-12">
+                <div class="flex justify-center gap-3 mb-6">
+                    <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium">Research</span>
+                    <span class="bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">Journal</span>
+                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Sustainability</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Recycling of PCGF</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Summer research project on PCGF recycling, with journal publication coming soon. 
+                    Includes comprehensive analysis and findings.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Poster and Links (no embed) -->
+    <section class="py-10 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+                <h2 class="text-3xl font-bold text-gray-900">Research Poster</h2>
+                <div class="flex gap-3">
+                    <a href="../public/images/projects/pc-gf_researchposter.png" target="_blank" rel="noopener" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">View Poster (PNG)</a>
+                    <a href="../public/images/projects/postergood_copy.pdf" target="_blank" rel="noopener" class="inline-flex items-center bg-gray-900 hover:bg-gray-800 text-white px-4 py-2 rounded-lg">View Poster (PDF)</a>
+                </div>
+            </div>
+            <div class="bg-gray-50 border rounded-xl p-4">
+                <img src="../public/images/projects/pc-gf_researchposter.png" alt="PCGF Research Poster" class="w-full max-h-[90vh] object-contain rounded-lg"/>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview (from poster) -->
+    <section class="py-16 bg-gray-50 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Overview</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Investigation into the <strong>thermomechanical, structural and rheological</strong> properties of
+                <strong>pristine vs. recycled thermoplastic sandwich panels</strong>, completed at the
+                <strong>Structures and Composite Materials Laboratory (SCML), McGill University</strong>.
+                We developed and validated a <strong>recycling methodology</strong> based on shredding and
+                compression moulding, then used a <strong>Box–Behnken design of experiments (BBD)</strong>
+                to generate a quadratic model for behavioural optimisation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Methods -->
+    <section class="py-16 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Materials & Methods</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                <li>Sandwich board laminate: <em>Polymer A</em> skin, <em>Polymer B</em> core, <em>Polymer C</em> adhesive.</li>
+                <li>Recycling route: shredding → controlled compression moulding (temperature/pressure/time).</li>
+                <li>Analyses: rheological, structural (optical microscopy), thermal (T<sub>g</sub>, degradation), and mechanical (modulus/strength).</li>
+                <li>Design of Experiments: <strong>BBD</strong> varying temperature, pressure, and time; regression to a quadratic response surface.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Results (concise) -->
+    <section class="py-16 bg-gray-50 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Key Results</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                <li><strong>Thermal parity</strong>: recycled samples maintain glass transition trends similar to pristine material; degradation near ~410&nbsp;°C.</li>
+                <li><strong>Optimisation</strong>: response surface predicts flexural strength maximised at a specific combination of temperature, pressure and time.</li>
+                <li><strong>Mechanical performance</strong>: recycled panels achieved meaningful stiffness/strength with process tuning.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Acknowledgements -->
+    <section class="py-12 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Acknowledgements</h2>
+            <p class="text-gray-700">Work conducted at the <strong>Structures and Composite Materials Laboratory (SCML)</strong>, McGill University. Funding support from the <strong>Natural Sciences and Engineering Research Council of Canada (NSERC)</strong>.</p>
+        </div>
+    </section>
+
+<!-- Publication Status -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-gradient-to-r from-purple-500 to-blue-600 rounded-2xl shadow-xl p-8 text-white">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold mb-4">Journal Publication</h2>
+                    <p class="text-xl mb-6">Research findings are being prepared for publication in a peer-reviewed journal</p>
+                    <div class="flex justify-center items-center space-x-4">
+                        <div class="bg-white/20 rounded-full px-4 py-2">
+                            <span class="font-semibold">Status: Approved</span>
+                        </div>
+                        <div class="bg-white/20 rounded-full px-4 py-2">
+                            <span class="font-semibold">Expected: Late 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
