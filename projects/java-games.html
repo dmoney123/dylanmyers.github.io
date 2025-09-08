@@ -58,15 +58,12 @@
                 </div>
                 <div class="md:w-1/2 p-8">
                     <h2 class="text-3xl font-bold mb-3">Java‑Monster</h2>
-                    <p class="text-gray-200 mb-4">
-                        Creature‑based arcade game built to showcase OOP: composition over inheritance,
-                        interfaces for behaviors, and a simple entity component pattern for updates/rendering.
-                    </p>
+                    <p class="text-gray-200 mb-4">Tower‑defense inspired assignment: monsters advance toward a castle while warriors defend the territory. I built a clean, testable OOP model with composition over inheritance, interfaces for behaviours, and turn‑based sequencing. Combat uses weapon effectiveness tables, rage accumulation and berserk states, and multi‑step attack chains (e.g., piercing or retrieval mechanics).</p>
                     <ul class="list-disc pl-5 space-y-2 text-gray-200 mb-6">
-                        <li>Game loop with fixed‑timestep updates</li>
-                        <li>Collision detection and basic physics</li>
-                        <li>Sprite animation and input handling</li>
-                        <li>Config‑driven levels and difficulty</li>
+                        <li>Well‑factored OOP design (composition, interfaces, SOLID)</li>
+                        <li>Turn‑based engine with deterministic resolution order</li>
+                        <li>Weapon effectiveness matrix; rage/berserk mechanics</li>
+                        <li>Edge‑case handling: tile constraints, valid interactions</li>
                     </ul>
                     <div class="space-x-3">
                         <a target="_blank" rel="noopener" href="https://github.com/dmoney123" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-white text-sm font-medium">View on GitHub</a>
@@ -83,15 +80,12 @@
             <div class="md:flex">
                 <div class="md:w-1/2 order-2 md:order-1 p-8">
                     <h2 class="text-3xl font-bold mb-3">Block‑Buster</h2>
-                    <p class="text-gray-200 mb-4">
-                        A brick‑breaker with powerups and stages. Emphasis on clean design patterns (Strategy,
-                        Factory) and separation of concerns for rendering, input, and game state.
-                    </p>
+                    <p class="text-gray-200 mb-4">Visual puzzle built on a quad‑tree data structure. Players transform the board to meet a goal (largest colour blob or symmetry) using operations like rotate, reflect, smash, and condense. The Mondrian‑style board highlights recursive structure and makes the rules simple but challenging.</p>
                     <ul class="list-disc pl-5 space-y-2 text-gray-200 mb-6">
-                        <li>Powerups, scoring, and lives system</li>
-                        <li>Level definitions via simple JSON/CSV</li>
-                        <li>Deterministic collisions and rebound angles</li>
-                        <li>Pause/Resume and simple UI overlays</li>
+                        <li>Quad‑tree model with recursive operations</li>
+                        <li>Goals: max connected blob or horizontal/vertical symmetry</li>
+                        <li>Moves: rotate, reflect, smash, condense</li>
+                        <li>Immediate scoring feedback after each move</li>
                     </ul>
                     <div class="space-x-3">
                         <a target="_blank" rel="noopener" href="https://github.com/dmoney123" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-white text-sm font-medium">View on GitHub</a>
