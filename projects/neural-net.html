@@ -17,7 +17,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0">
-                    <a href="../index.html" class="text-xl font-bold text-gray-900">dylanmyers.github.io</a>
+                    <a href="../index.html" class="text-xl font-bold text-gray-900">Dylan Myers</a>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
@@ -62,10 +62,7 @@
             </div>
             <div class="prose prose-lg max-w-none">
                 <p class="text-gray-600 leading-relaxed mb-6">
-                    This project explores an <strong>Interpolating Neural Network</strong> for high-accuracy function approximation and data interpolation, developed for a university course. The approach emphasizes transparent numerical methods and controlled architecture choices over black-box ML tooling.
-                </p>
-                <p class="text-gray-600 leading-relaxed">
-                    It targets robust performance on <em>non-linear</em>, <em>multi-dimensional</em> datasets while maintaining numerical stability and interpretability.
+                    In this project, I developed and tested a feed-forward artificial neural network (ANN) designed to approximate different types of sampled functions. My main goal was to explore how well an ANN could interpolate functions when trained using numerical methods rather than more common gradient descent approaches. I wanted to see how accurate the network could be, how stable the training process was, and how computationally expensive the method would be
                 </p>
             </div>
         </div>
@@ -79,45 +76,22 @@
             </div>
             <div class="prose prose-lg max-w-none">
                 <p class="text-gray-600 leading-relaxed mb-6">
-                    Implemented a custom MLP from scratch in Python/NumPy: backpropagation, MSE loss, gradient descent with momentum, ReLU/Sigmoid/Tanh activations, and batch normalization. Training used early stopping and adaptive learning rate.
+                    Implemented an ANN from scratch in Python (no libraries whatsoever), utilizing numerical methods.
                 </p>
                 
                 <div class="grid md:grid-cols-2 gap-8 mb-8">
                     <div class="bg-white p-6 rounded-lg shadow-sm">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Architecture</h3>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Method</h3>
                         <ul class="text-gray-600 space-y-2">
-                            <li>• Multi-layer perceptron with configurable hidden layers</li>
-                            <li>• Adaptive learning rate with momentum</li>
-                            <li>• Custom activation functions (ReLU, Sigmoid, Tanh)</li>
-                            <li>• Batch normalization for training stability</li>
+                            <li>• Built feed forward ANN with chosen layers and neurons</li> 
+                            <li>• Computed LSE gradient with central difference</li> 
+                            <li>• Solved system using Broydens method with Gauss Seidel</li> 
+                            <li>• Tested step sizes and found 1e3 optimal</li>
+                            <li>• Normalized inputs between 0 and 1</li> 
+                            <li>• Clipped large gradients and added normalization constant</li> 
+                            <li>• Added retry reset if error exploded</li>
+                            <li>• Compared transfer functions across sampled functions</li>
                         </ul>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Training</h3>
-                        <ul class="text-gray-600 space-y-2">
-                            <li>• Backpropagation algorithm implementation</li>
-                            <li>• Mean Squared Error loss function</li>
-                            <li>• Gradient descent with adaptive learning</li>
-                            <li>• Early stopping to prevent overfitting</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="bg-blue-50 p-6 rounded-lg mb-8">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Key Technical Features</h3>
-                    <div class="grid md:grid-cols-3 gap-4 text-sm">
-                        <div class="text-center">
-                            <div class="text-2xl font-bold text-blue-600 mb-1">100%</div>
-                            <div class="text-gray-600">Custom Implementation</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-2xl font-bold text-blue-600 mb-1">Multi-D</div>
-                            <div class="text-gray-600">Dimensional Support</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-2xl font-bold text-blue-600 mb-1">High</div>
-                            <div class="text-gray-600">Precision Output</div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -131,38 +105,28 @@
                 <h2 class="text-3xl font-bold text-gray-900 mb-4">Results</h2>
             </div>
             <div class="prose prose-lg max-w-none">
-                <p class="text-gray-600 leading-relaxed mb-8">
-                    Selected outcomes from course experiments and benchmarks:
-                </p>
-
                 <div class="grid md:grid-cols-2 gap-8 mb-8">
                     <div class="bg-green-50 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Performance Metrics</h3>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Findings</h3>
                         <ul class="text-gray-600 space-y-2">
-                            <li>• <strong>99.2% accuracy</strong> on 2D interpolation tasks</li>
-                            <li>• <strong>97.8% accuracy</strong> on 5D high-dimensional data</li>
-                            <li>• <strong>10x faster</strong> than traditional spline methods</li>
-                            <li>• <strong>Robust to noise</strong> - maintains accuracy with 15% noise</li>
+                            <li>• Clipping normalization and retries improved stability</li> 
+                            <li>• Step size 1e3 gave best accuracy</li> 
+                            <li>• Accurate for smooth functions like polynomials</li> 
+                            <li>• Struggled with sharp corners and oscillations</li> 
+                            <li>• Handled noisy functions reasonably well</li> 
+                            <li>• Convergence was fast but oscillatory</li> 
+                            <li>• Error decreased with more iterations</li> 
+                            <li>• Computation was very expensive for large networks</li> 
+                            <li>• Accurate but highly demanding method</li>
                         </ul>
                     </div>
                     <div class="bg-blue-50 p-6 rounded-lg">
                         <h3 class="text-xl font-semibold text-gray-900 mb-4">Technical Achievements</h3>
                         <ul class="text-gray-600 space-y-2">
-                            <li>• Successfully interpolated complex non-linear functions</li>
-                            <li>• Handled datasets up to 10,000 data points efficiently</li>
                             <li>• Maintained numerical stability across all test cases</li>
                             <li>• Zero dependency on external ML libraries</li>
                         </ul>
                     </div>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg mb-8">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Discussion & Limitations</h3>
-                    <ul class="text-gray-600 space-y-2">
-                        <li>• Interpolation generalizes well within training domain; extrapolation is restricted.</li>
-                        <li>• Hyperparameter sensitivity mitigated via early stopping and normalization.</li>
-                        <li>• Numerics verified against classical interpolation baselines.</li>
-                    </ul>
                 </div>
 
                 <div class="text-center mb-12">
@@ -172,14 +136,6 @@
 
                 <div class="text-sm text-gray-500 text-center">Course project. Figures and further details available in the full report.</div>
             </div>
-        </div>
-    </section>
-
-    <!-- Acknowledgements -->
-    <section class="py-12 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Acknowledgements</h2>
-            <p class="text-gray-700">Thanks to course instructors and peers for guidance and feedback. Implementation built from first principles as part of the curriculum.</p>
         </div>
     </section>
 
