@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Projects - dylanmyers.github.io</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%); }
+    </style>
+</head>
+<body class="gradient-bg">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="../index.html" class="text-xl font-bold text-gray-900">dylanmyers.github.io</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="pt-20 pb-10 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+            <img src="../public/images/projects/MLProjects.png" alt="ML Projects" class="w-full rounded-xl shadow-lg object-contain" style="max-height: 26rem;">
+            <div class="text-center mt-10">
+                <div class="flex justify-center gap-3 mb-6">
+                    <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-medium">Machine Learning</span>
+                    <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">Data Science</span>
+                    <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                    <span class="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-medium">Statistics</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">ML Projects</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Collection of machine learning projects focusing on data analysis, regression modeling, and classification techniques applied to engineering datasets.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 1: Data Analysis & Preprocessing -->
+    <section class="py-12 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-gray-50 rounded-xl shadow p-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Project 1: Data Analysis & Preprocessing</h2>
+                
+                <div class="prose prose-lg max-w-none mb-6">
+                    <p class="text-gray-700 leading-relaxed">
+                        This project focused on comprehensive data analysis and preprocessing of concrete compressive strength datasets. The work involved detailed statistical analysis to understand data distributions, identify patterns, and prepare datasets for machine learning applications. Through exploratory data analysis, the team examined relationships between various concrete composition variables and their impact on compressive strength.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        The project emphasized critical evaluation of dataset quality and feasibility for machine learning tasks, ensuring that the data was properly cleaned and transformed before model implementation. Data visualization techniques including box plots, histograms, scatter plots, and Principal Component Analysis (PCA) were employed to gain insights into the underlying data structure and identify potential preprocessing requirements.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Feature engineering and transformation techniques were applied to optimize the dataset for subsequent machine learning models, ensuring that the input features were properly scaled and normalized for effective model training and performance evaluation.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Skills</h3>
+                    <ul class="text-gray-700 space-y-1">
+                        <li>• Data preprocessing & statistical analysis</li>
+                        <li>• Data visualization (box plots, histograms, scatter plots, PCA)</li>
+                        <li>• Feature engineering & transformation</li>
+                        <li>• Critical evaluation of dataset quality and feasibility for ML tasks</li>
+                    </ul>
+                </div>
+
+                <div class="text-center">
+                    <a href="../public/images/projects/ML_Project1.pdf" target="_blank" rel="noopener" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                        View Project 1 Report (PDF)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 2: Regression and Classification Modeling -->
+    <section class="py-12 bg-gray-50 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-xl shadow p-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Project 2: Regression and Classification Modeling</h2>
+                
+                <div class="prose prose-lg max-w-none mb-6">
+                    <p class="text-gray-700 leading-relaxed">
+                        Building on the first report, this project implemented machine learning models to predict and classify concrete compressive strength. The regression analysis compared regularized linear regression with artificial neural networks (ANNs), using two-level cross-validation to optimize hyperparameters and assess generalization error. Results showed that ANN models consistently outperformed linear regression and baseline models, confirming their suitability for complex datasets.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        In the classification task, the team applied logistic regression and k-Nearest Neighbors (KNN) to distinguish high- vs. low-strength concrete, with KNN achieving the lowest error rate. Statistical tests (paired t-tests, McNemar's test) validated the differences in model performance, confirming that advanced methods significantly outperformed baselines.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        The project emphasized both predictive accuracy and the interpretability of model coefficients, demonstrating how regression and classification models can be applied to optimize material quality in engineering contexts. The comprehensive evaluation framework ensured robust model selection and validation.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Skills</h3>
+                    <ul class="text-gray-700 space-y-1">
+                        <li>• Implementation of regression & ANN models</li>
+                        <li>• Cross-validation & regularization techniques</li>
+                        <li>• Model evaluation using statistical hypothesis testing</li>
+                        <li>• Classification modeling (logistic regression, KNN) and interpretability</li>
+                    </ul>
+                </div>
+
+                <div class="text-center">
+                    <a href="../public/images/projects/ML_Project2.pdf" target="_blank" rel="noopener" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                        View Project 2 Report (PDF)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back -->
+    <section class="py-8 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <a href="../index.html#projects" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                Back to Projects
+            </a>
+        </div>
+    </section>
+</body>
+</html>
