@@ -5,108 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slapshot - Dylan Myers</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-900 text-white">
-    <!-- Navigation -->
-    <nav class="bg-gray-800 p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="../index.html" class="text-xl font-bold text-blue-400">Dylan Myers</a>
-            <div class="space-x-4">
-                <a href="../index.html" class="hover:text-blue-400">Home</a>
-                <a href="../projects.html" class="hover:text-blue-400">Projects</a>
+<body class="gradient-bg bg-gray-900 text-white">
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="../index.html" class="text-xl font-bold text-gray-900">dylanmyers.github.io</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="../index.html#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">About</a>
+                        <a href="../index.html#experience" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Experience</a>
+                        <a href="../index.html#projects" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Projects</a>
+                        <a href="../index.html#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
-        <div class="container mx-auto text-center">
+    <section class="pt-20 pb-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-purple-600">
+        <div class="max-w-5xl mx-auto text-center">
             <h1 class="text-5xl font-bold mb-4">Slapshot</h1>
-            <p class="text-xl text-blue-100">Interactive Hockey Game Development</p>
+            <p class="text-xl text-blue-100">2D hockey game built in Python with Pygame</p>
         </div>
     </section>
 
-    <!-- Problem Section -->
+    <!-- Video Section -->
+    <section class="py-10 bg-gray-900">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="relative" style="padding-top: 56.25%;">
+                <iframe class="absolute top-0 left-0 w-full h-full rounded-xl shadow-xl"
+                        src="https://www.youtube.com/embed/yzxtv87NX9A" 
+                        title="Slapshot Gameplay"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
     <section class="py-16 bg-gray-800">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-8 text-center">Problem</h2>
+            <h2 class="text-3xl font-bold mb-8 text-center">Overview</h2>
             <div class="max-w-4xl mx-auto">
                 <p class="text-lg leading-relaxed mb-6">
-                    Traditional hockey video games often lack the authentic feel of real ice hockey, with complex controls that don't capture the fast-paced, intuitive nature of the sport. Players need a game that combines realistic physics with accessible gameplay mechanics.
-                </p>
-                <p class="text-lg leading-relaxed">
-                    The challenge was to create an engaging hockey game that feels natural to play while maintaining the excitement and strategy of real hockey matches.
+                    Slapshot is a fast-paced, 2D hockey game built with Python and Pygame. The objective is simple: 
+                    score enough goals to advance through rounds while avoiding obstacles and managing powerups. 
+                    The game features three levels of increasing difficulty, collision-based interactions, and a 
+                    high-score memory system to keep players coming back.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Approach Section -->
     <section class="py-16 bg-gray-900">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-8 text-center">Approach</h2>
-            <div class="max-w-4xl mx-auto">
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4 text-blue-400">Game Engine Development</h3>
-                        <p class="text-lg leading-relaxed mb-6">
-                            Built using modern game development frameworks with focus on smooth 60fps gameplay and responsive controls that mimic real hockey stick movements.
-                        </p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4 text-blue-400">Physics Simulation</h3>
-                        <p class="text-lg leading-relaxed mb-6">
-                            Implemented realistic puck physics including friction, momentum, and collision detection to create authentic ice hockey gameplay mechanics.
-                        </p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4 text-blue-400">Multiplayer Integration</h3>
-                        <p class="text-lg leading-relaxed mb-6">
-                            Developed real-time multiplayer functionality allowing players to compete against each other in fast-paced hockey matches.
-                        </p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold mb-4 text-blue-400">User Interface Design</h3>
-                        <p class="text-lg leading-relaxed mb-6">
-                            Created an intuitive interface with customizable controls, real-time score tracking, and dynamic camera angles for optimal gameplay experience.
-                        </p>
-                    </div>
+            <h2 class="text-3xl font-bold mb-8 text-center">Highlights</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-blue-400">Core Gameplay</h3>
+                    <ul class="space-y-2 text-gray-200">
+                        <li>• Score goals to advance rounds; difficulty increases over 3 levels</li>
+                        <li>• Collision-based mechanics for puck, player, and obstacles</li>
+                        <li>• Multiple powerups that alter speed, control, and scoring</li>
+                        <li>• High-score memory feature</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-blue-400">Tech Stack</h3>
+                    <ul class="space-y-2 text-gray-200">
+                        <li>• Python + Pygame</li>
+                        <li>• Sprite-based rendering and collision detection</li>
+                        <li>• Simple state machine for levels and UI flow</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Results Section -->
     <section class="py-16 bg-gray-800">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold mb-8 text-center">Results</h2>
             <div class="max-w-4xl mx-auto">
-                <div class="grid md:grid-cols-3 gap-8 mb-8">
-                    <div class="text-center">
-                        <div class="text-4xl font-bold text-blue-400 mb-2">60 FPS</div>
-                        <p class="text-lg">Smooth gameplay performance</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-4xl font-bold text-blue-400 mb-2">4v4</div>
-                        <p class="text-lg">Multiplayer support</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-4xl font-bold text-blue-400 mb-2">Real-time</div>
-                        <p class="text-lg">Physics simulation</p>
-                    </div>
-                </div>
-                <p class="text-lg leading-relaxed text-center">
-                    Successfully created an engaging hockey game that combines realistic physics with accessible gameplay. The project demonstrates strong skills in game development, real-time programming, and user experience design.
+                <p class="text-lg leading-relaxed text-center text-gray-200">
+                    A polished, replayable prototype that showcases Python + Pygame skills, collision systems, level design, 
+                    and lightweight game architecture. Designed for quick rounds and escalating challenge.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 py-8">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2024 Dylan Myers. All rights reserved.</p>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400">&copy; 2024 Dylan Myers. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 </body>
