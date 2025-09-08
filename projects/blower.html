@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Ryobi Blower - dylanmyers.github.io</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%); }
+    </style>
+</head>
+<body class="gradient-bg">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="../index.html" class="text-xl font-bold text-gray-900">dylanmyers.github.io</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="pt-20 pb-10 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto">
+            <img src="../public/images/projects/ryobi-blower.jpg" alt="Interactive Ryobi Blower" class="w-full rounded-xl shadow-lg object-contain" style="max-height: 26rem;">
+            <div class="text-center mt-10">
+                <div class="flex justify-center gap-3 mb-6">
+                    <span class="bg-emerald-600 text-white px-3 py-1 rounded-full text-sm font-medium">Interactive Install</span>
+                    <span class="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-medium">Makey Makey</span>
+                    <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">Raspberry Pi</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Interactive Ryobi Blower</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Built during my TTI marketing internship to let customers interact with a real tool and trigger branded content.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="py-12 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Overview</h2>
+            <p class="text-gray-700 leading-relaxed">
+                The goal was to make in-store experiences more engaging by allowing shoppers to handle a Ryobi blower and instantly see a short product reel. Using a Makey Makey, a simple Python script, and a Raspberry Pi, I transformed a standard blower into a touch‑activated demo that plays an advertisement when the trigger is pressed.
+            </p>
+        </div>
+    </section>
+
+    <!-- Problem / Solution -->
+    <section class="py-12 bg-gray-50 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-xl shadow p-6">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-3">Problem</h3>
+                <p class="text-gray-700">Customers needed a way to interact with tools and quickly learn key features before purchase.</p>
+            </div>
+            <div class="bg-white rounded-xl shadow p-6">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-3">Solution</h3>
+                <ul class="text-gray-700 space-y-2">
+                    <li>• Makey Makey detects physical trigger press</li>
+                    <li>• Raspberry Pi runs a lightweight Python script</li>
+                    <li>• Auto-plays a branded video ad on a connected display</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results / Demo -->
+    <section class="py-12 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Demo</h2>
+            <div class="aspect-video w-full rounded-xl overflow-hidden shadow">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/h_E4BkSia34?si=Z1MdteYLewN9i4PK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back -->
+    <section class="py-8 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <a href="../index.html#projects" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                Back to Projects
+            </a>
+        </div>
+    </section>
+</body>
+</html> 
